@@ -17,7 +17,7 @@ _This application allows the customer to choose what toppings and what size of p
 
 ## Setup/Installation Requirements
 
-* _Clone this application at []()_
+* _Clone this application at [https://github.com/danlauby/order-pizza.git](https://github.com/danlauby/order-pizza.git)_
 * _Locate index.html file within ping-pong directory_
 * _Open index.html in preferred browser_
 
