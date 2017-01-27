@@ -31,27 +31,44 @@ function genericOrderNumber() {
 
 
 // User Interface Logic
+function resetForm() {
+  var inputtedToppings =  $('input:checkbox[name="toppings"]');
+  var inputtedSize = $('#input-size').val("");
+  var inputtedName = $('input#name').val("");
+  var inputtedAddress = $('#address').val("");
+}
+
 Order.prototype.showOrder = function() {
-  var html = '<h1>Thanks for your order, ';
-      html += this.customerName;
-      html += '!</h1>';
-      html += '<h2>Order # is ';
-      html += genericOrderNumber();
-      html += '</h2>';
-      html += '<h2>Total: $';
-      html += this.pizza.price;
-      html += '</h2>';
-      html += '<p>Your <span class="key-words">';
-      html += this.pizza.pizzaSize;
-      html += ' </span>pizza with'
-      html += '<ul>';
-  for (var i=0; i<this.pizza.toppings.length; i++) {
-    html += '<li>' + this.pizza.toppings[i] + '</li>';
-  }
-      html += 'will be delivered to :</br><h2>';
+  var html = "";
+  if (!this.pizza.toppings || !this.customerName) {
+    console.log(this);
+    html += '<h2>Thanks, Please come back again!</h2>';
+  } else {
+    html = '<h1>Thanks for your order, ';
+    html += this.customerName;
+    html += '!</h1>';
+    html += '<h2>Order # is ';
+    html += genericOrderNumber();
+    html += '</h2>';
+    html += '<h2>Total: $';
+    html += this.pizza.price;
+    html += '</h2>';
+    html += '<p>Your <span class="key-words">';
+    html += this.pizza.pizzaSize;
+    html += ' </span>pizza with'
+    html += '<ul>';
+    for (var i=0; i<this.pizza.toppings.length; i++) {
+      html += '<li>' + this.pizza.toppings[i] + '</li>';
+    }
+    if (this.address) {
+      html += '</br>will be delivered to :</br><h2>';
       html += this.address;
       html += '</h2>';
-      html += 'within <span class="key-words">1 hour</span> guaranteed!';
+      html += 'within <span class="key-words">1 hour</span> guaranteed!</br>';
+    }
+  }
+
+      html += '<button type="submit" class="btn btn-success">Place another Order</button>';
   $('.show-order').append(html);
 }
 
@@ -68,7 +85,8 @@ $(function() {
     });
     customerPizza.cost();
     customerOrder.showOrder();
-    // $('.show-order').text(customerPizza.toppings);
+    $('form#customer-input').hide();
+    resetForm();
     e.preventDefault();
   });
 
