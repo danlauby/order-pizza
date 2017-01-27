@@ -13,24 +13,60 @@
       <h1>Trent's Pizza Parlor</h1>
       <h2>A slice of Love</h2>
       <form id="customer-input">
+        <label >
+  <input type="checkbox" class="custom-control-input">
+
+  <span>Check this custom checkbox</span>
+</label>
         <div class="form-group toppings-options">
-          <label for="toppings">Select Toppings:</label>
+          <h2>Select Toppings:</h2>
           <div class="row">
             <div class="col-sm-6">
-              <input type="checkbox" name="toppings" class="form-control" value="extra-cheese">Extra Cheese
-              <input type="checkbox" name="toppings" class="form-control" value="feta">Feta Cheese
-              <input type="checkbox" name="toppings" class="form-control" value="pepperoni">Pepperoni
-              <input type="checkbox" name="toppings" class="form-control" value="canadian-bacon">Canadian Bacon
-              <input type="checkbox" name="toppings" class="form-control" value="chicken">Chicken
+              <label>
+              <input type="checkbox" name="toppings" value="Extra Cheese">
+              <span>Extra Cheese</span>
+            </label></br>
+              <label>
+              <input type="checkbox" name="toppings" value="Feta Cheese">
+              <span>Feta Cheese</span>
+              </label></br>
+              <label>
+              <input type="checkbox" name="toppings" value="Pepperoni">
+              <span>Pepperoni</span>
+              </label></br>
+              <label>
+              <input type="checkbox" name="toppings" value="Canadian Bacon">
+              <span>Canadian Bacon</span>
+              </label></br>
+              <label>
+              <input type="checkbox" name="toppings" value="Chicken">
+              <span>Chicken</span>
+              </label>
             </div>
             <div class="col-sm-6">
-              <input type="checkbox" name="toppings" class="form-control" value="anchovies">Anchovies
-              <input type="checkbox" name="toppings" class="form-control" value="pineapple">Pineapple
-              <input type="checkbox" name="toppings" class="form-control" value="olives">Olives
-              <input type="checkbox" name="toppings" class="form-control" value="peppers">Peppers
-              <input type="checkbox" name="toppings" class="form-control" value="tomatoes">Tomatoes
+              <label>
+              <input type="checkbox" name="toppings" value="Anchovies">
+              <span>Anchovies</span>
+            </label></br>
+              <label>
+              <input type="checkbox" name="toppings" value="Pineapple">
+              <span>Pineapple</span>
+              </label></br>
+              <label>
+              <input type="checkbox" name="toppings" value="Olives">
+              <span>Olives</span>
+              </label></br>
+              <label>
+              <input type="checkbox" name="toppings" value="Peppers">
+              <span>Peppers</span>
+              </label></br>
+              <label>
+              <input type="checkbox" name="toppings" value="Tomatoes">
+              <span>Tomatoes</span>
+              </label>
             </div>
           </div>
+        </div>
           <div class="row">
             <div class="form-group">
               <label for="size">Select Size:</label>
@@ -41,7 +77,14 @@
               </select>
             </div>
           </div>
-        </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" class="form-control">
+              <!--<label for="address">Address:</label>
+              <input type="text" id="address" class="form-control">-->
+            </div>
+          </div>
         <button type="submit" class="btn btn-success">Place your Order</button>
       </form>
 
