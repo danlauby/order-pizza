@@ -1,6 +1,6 @@
 // Business Logic
-function Pizza(toppings, size) {
-  this.toppings = toppings;
+function Pizza(size) {
+  this.toppings = [];
   this.size = size;
   this.price = 0;
 }
@@ -29,13 +29,17 @@ Pizza.prototype.cost = function() {
 
 
 // User Interface Logic
-// Pizza.prototype.options = function() {
-//   $('.toppings-options').append(
-//     '<label for="toppings">Choose your Toppings:</label>' +
-//     for (i=0; i<=10; i++) {
-//       '<input type="checkbox">'
-//     }
-//   );
-// }
 
-var newPizza = new Pizza(['olives', 'pepperoni'], 'medium');
+
+var customerPizza = new Pizza('medium');
+
+$(function() {
+  $('form#customer-input').submit(function(e) {
+    var inputtedToppings =  $('input:checkbox[name="toppings"]:checked').each(function() {
+      customerPizza.toppings.push($(this).val());
+    });
+    console.log(customerPizza.toppings);
+    e.preventDefault();
+  });
+
+});
