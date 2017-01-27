@@ -9,6 +9,40 @@
     <title>Order Pizza</title>
   </head>
   <body>
-
+    <div class="container">
+      <h1>Trent's Pizza Parlor</h1>
+      <h2>A slice of Love</h2>
+      <form id="customer-input">
+        <div class="form-group toppings-options">
+          <label for="toppings">Select Toppings:</label>
+          <div class="row">
+            <div class="col-sm-6">
+              <input type="checkbox" name="toppings" class="form-control" value="extra-cheese">Extra Cheese
+              <input type="checkbox" name="toppings" class="form-control" value="feta">Feta Cheese
+              <input type="checkbox" name="toppings" class="form-control" value="pepperoni">Pepperoni
+              <input type="checkbox" name="toppings" class="form-control" value="canadian-bacon">Canadian Bacon
+              <input type="checkbox" name="toppings" class="form-control" value="chicken">Chicken
+            </div>
+            <div class="col-sm-6">
+              <input type="checkbox" name="toppings" class="form-control" value="anchovies">Anchovies
+              <input type="checkbox" name="toppings" class="form-control" value="pineapple">Pineapple
+              <input type="checkbox" name="toppings" class="form-control" value="olives">Olives
+              <input type="checkbox" name="toppings" class="form-control" value="peppers">Peppers
+              <input type="checkbox" name="toppings" class="form-control" value="tomatoes">Tomatoes
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="size">Select Size:</label>
+              <select id="input-size" class="form-control" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
