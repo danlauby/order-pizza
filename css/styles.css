@@ -1,3 +1,42 @@
+body {
+  background-image: url(../img/pizza-vintage.jpg);
+}
+
+a {
+  font-style: italic;
+  color: #ff0000;
+}
+
+h1 {
+  font-family:  Fira Sans, sans-serif;
+  font-size: 4em;
+}
+
+p {
+  font-family:  Fira Sans, sans-serif;
+  font-size: 2em;
+  line-height: 20px;
+}
+
+li {
+  list-style-type: none;
+  font-style: italic;
+  font-size: 2em;
+}
+
+.header, .footer {
+  text-align: center;
+  background-color: #ccff66;
+  padding: 3%;
+}
+
+.container {
+  background-color: rgba(255,255,255,0.9);
+  
+  padding: 40px;
+  text-align: center;
+}
+
 .key-words {
   font-weight: bold;
 }

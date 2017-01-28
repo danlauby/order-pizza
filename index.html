@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.1.1.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
     <title>Order Pizza</title>
   </head>
   <body>
-    <div class="container">
+    <div class="header">
       <h1>Trent's Pizza Parlor</h1>
       <h2>A slice of Love</h2>
+    </div>
+    <div class="container">
       <form id="customer-input">
         <div class="form-group toppings-options">
           <h2>Select Toppings:</h2>
@@ -80,12 +83,22 @@
               <input type="text" id="address" class="form-control">
             </div>
           </div>
-        <button type="submit" class="btn btn-success">Place your Order</button>
+        <button type="submit" class="btn btn-danger">Place your Order</button>
       </form>
 
       <div class="row">
         <div class="show-order">
 
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class="col-sm-6">
+          <p>Copyright Trent's Pizzaria &copy; 2017</p>
+        </div>
+        <div class="col-sm-6">
+          <p>Visit us @ <a href="https://www.google.com/">trents.pizzaria.com</a></p>
         </div>
       </div>
     </div>

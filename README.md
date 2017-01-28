@@ -14,6 +14,9 @@ _This application allows the customer to choose what toppings and what size of p
 |------------|:----------------------:|----------------:|
 | Customer selects which toppings to add to their pizza |  Customer checks 'pepperoni' and 'olives' checkboxes | Toppings: 'pepperoni', 'olives' = $2 added to base pizza cost |
 | Customer selects what size of pizza they want: 'Small', 'Medium' or 'Large' | Customer selects 'Large' | Size: 'Large' = $3 added to base pizza cost |
+| Display customer's name in order receipt | Customer enters 'Charlie' | 'Thanks for your order Charlie!' |
+| Display customer's toppings in order receipt | Customer enters 'feta', 'olives' | -Feta -Olives |
+| Display customer's address in order receipt| Customer enters '123 5th St Portland, OR 97000' | Your pizza will be delivered to: '123 5th St Portland, OR 97000' |
 
 ## Setup/Installation Requirements
 
