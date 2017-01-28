@@ -1,10 +1,19 @@
+html, body {
+    height: 100%;
+}
+
+html .container {
+  min-height: 100%;
+}
+
 body {
   background-image: url(../img/pizza-vintage.jpg);
+  opacity: 0.9;
 }
 
 a {
   font-style: italic;
-  color: #ff0000;
+  color: black;
 }
 
 h1 {
@@ -18,25 +27,52 @@ p {
   line-height: 20px;
 }
 
+h2 {
+  color: #fff;
+}
+
+.show-order h2 {
+  color: black;
+}
+
 li {
   list-style-type: none;
   font-style: italic;
   font-size: 2em;
 }
 
+label {
+  color: #fff;
+}
+
+form {
+  background-color: black;
+  padding: 80px;
+  border-radius: 5px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
 .header, .footer {
   text-align: center;
-  background-color: #ccff66;
+  background-color: #e50000;
   padding: 3%;
 }
 
 .container {
-  background-color: rgba(255,255,255,0.9);
-  
+  width: 100%;
   padding: 40px;
   text-align: center;
 }
 
 .key-words {
   font-weight: bold;
+}
+
+.show-order {
+  background-color: #fff;
+  padding: 3%;
+  border-radius: 5px;
 }

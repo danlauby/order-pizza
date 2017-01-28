@@ -55,7 +55,7 @@ Order.prototype.showOrder = function() {
     html += '</h2>';
     html += '<p>Your <span class="key-words">';
     html += this.pizza.pizzaSize;
-    html += ' </span>pizza with'
+    html += ' </span>pizza with:'
     html += '<ul>';
     for (var i=0; i<this.pizza.toppings.length; i++) {
       html += '<li>' + this.pizza.toppings[i] + '</li>';
