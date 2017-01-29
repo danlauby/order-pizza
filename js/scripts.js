@@ -88,9 +88,10 @@ $(function() {
     $('form#customer-input').hide();
     resetForm();
     e.preventDefault();
-  });
-  $('button#another').click(function() {
-    $('form#customer-input').show();
-    $('#thankMessage').hide();
+    $('button#anotherOrder').click(function() {
+      $('.show-order').hide();
+      $('form#customer-input').show();
+      $('#thankMessage').hide();
+    });
   });
 });
