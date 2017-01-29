@@ -7,11 +7,7 @@ html .container {
 }
 
 body {
-<<<<<<< HEAD
-  background-image: url(../img/pizza-vintage.jpg);
-=======
-  background-image: url(../img/pizza-background.jpg);
->>>>>>> f4ce5f1eb2407861bcdb18c3a947e546bba23eaa
+  background-image: url(../img/pizza-parlor.jpg);
   opacity: 0.9;
 }
 
