@@ -86,10 +86,12 @@ $(function() {
     customerPizza.cost();
     customerOrder.showOrder();
     $('form#customer-input').hide();
-    resetForm();
+    $('.show-order').show();
     e.preventDefault();
+    resetForm();
     $('button#anotherOrder').click(function() {
-      $('.show-order').hide();
+      resetForm();
+      $('.show-order').empty().hide();
       $('form#customer-input').show();
       $('#thankMessage').hide();
     });

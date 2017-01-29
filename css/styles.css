@@ -31,9 +31,6 @@ h2 {
   color: #fff;
 }
 
-.show-order h2 {
-  color: black;
-}
 
 li {
   list-style-type: none;
@@ -71,7 +68,12 @@ input {
   font-weight: bold;
 }
 
+.show-order h2 {
+  color: black;
+}
+
 .show-order {
+  display: none;
   background-color: #fff;
   padding: 3%;
   border-radius: 5px;
