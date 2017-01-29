@@ -68,7 +68,7 @@ Order.prototype.showOrder = function() {
     }
   // }
 
-      html += '<button type="submit" id="anotherOrder" class="btn btn-danger">Place another Order</button>';
+      html += '<button type="submit" id="anotherOrder" class="btn btn-success">Place another Order</button>';
   $('.show-order').append(html);
 }
 
@@ -93,7 +93,6 @@ $(function() {
       resetForm();
       $('.show-order').empty().hide();
       $('form#customer-input').show();
-      $('#thankMessage').hide();
     });
   });
 });
