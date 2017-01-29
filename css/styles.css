@@ -7,7 +7,11 @@ html .container {
 }
 
 body {
-  background-image: url(../img/vintage-background.jpg);
+<<<<<<< HEAD
+  background-image: url(../img/pizza-vintage.jpg);
+=======
+  background-image: url(../img/pizza-background.jpg);
+>>>>>>> f4ce5f1eb2407861bcdb18c3a947e546bba23eaa
   opacity: 0.9;
 }
 
@@ -31,10 +35,14 @@ h2 {
   color: #fff;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f4ce5f1eb2407861bcdb18c3a947e546bba23eaa
 li {
   list-style-type: none;
   font-style: italic;
-  font-size: 20px;
+  font-size: 2em;
 }
 
 label {
@@ -67,13 +75,16 @@ input {
   font-weight: bold;
 }
 
-
+<<<<<<< HEAD
+.show-order {
+=======
 .show-order h2 {
   color: black;
 }
 
 .show-order {
   display: none;
+>>>>>>> f4ce5f1eb2407861bcdb18c3a947e546bba23eaa
   background-color: #fff;
   padding: 3%;
   border-radius: 5px;
