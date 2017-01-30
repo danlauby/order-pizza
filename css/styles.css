@@ -27,14 +27,14 @@ p {
   line-height: 20px;
 }
 
-h2 {
+form h2 {
   color: #fff;
 }
 
 li {
   list-style-type: none;
   font-style: italic;
-  font-size: 2em;
+  font-size: 20px;
 }
 
 label {
@@ -68,14 +68,7 @@ input {
 }
 
 .show-order {
-=======
-.show-order h2 {
-  color: black;
-}
-
-.show-order {
   display: none;
->>>>>>> f4ce5f1eb2407861bcdb18c3a947e546bba23eaa
   background-color: #fff;
   padding: 3%;
   border-radius: 5px;

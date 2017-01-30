@@ -40,10 +40,6 @@ function resetForm() {
 
 Order.prototype.showOrder = function() {
   var html = "";
-  // if (!this.pizza.toppings[0] || !this.customerName) {
-  //   console.log(this);
-  //   html += '<h2 id="thankMessage">Thanks, Please come back again!</h2>';
-  // } else {
     html = '<h1>Thanks for your order, ';
     html += this.customerName;
     html += '!</h1>';
@@ -60,15 +56,11 @@ Order.prototype.showOrder = function() {
     for (var i=0; i<this.pizza.toppings.length; i++) {
       html += '<li>' + this.pizza.toppings[i] + '</li>';
     }
-    if (this.address) {
       html += '</br><p>will be delivered to :</p><h2>';
       html += this.address;
       html += '</h2>';
       html += '<p>within <span class="key-words">1 hour</span> guaranteed!</p></br></br>';
-    }
-  // }
-
-      html += '<button type="submit" id="anotherOrder" class="btn btn-success">Place another Order</button>';
+      html += '<button type="submit" id="anotherOrder" class="btn btn-danger">Place another Order</button>';
   $('.show-order').append(html);
 }
 
@@ -93,6 +85,7 @@ $(function() {
       resetForm();
       $('.show-order').empty().hide();
       $('form#customer-input').show();
+      $('#thankMessage').hide();
     });
   });
 });
