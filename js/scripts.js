@@ -60,7 +60,7 @@ Order.prototype.showOrder = function() {
       html += this.address;
       html += '</h2>';
       html += '<p>within <span class="key-words">1 hour</span> guaranteed!</p></br></br>';
-      html += '<button type="submit" id="anotherOrder" class="btn btn-danger">Place another Order</button>';
+      html += '<button type="submit" id="anotherOrder" class="btn btn-success">Place another Order</button>';
   $('.show-order').append(html);
 }
 
