@@ -8,6 +8,8 @@ html .container {
 
 body {
   background-image: url(../img/vintage-background.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.9;
 }
 
@@ -54,7 +56,8 @@ input {
 .header, .footer {
   text-align: center;
   background-color: #e50000;
-  padding: 3%;
+  padding: 20px;
+  padding-bottom: 0;
 }
 
 .container {
